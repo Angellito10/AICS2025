@@ -1003,7 +1003,7 @@ section.our-courses ul.nacc li .right-content span {
   font-weight: 600;
   margin-right: 30px;
   padding-right: 30px;
-  border-right: 2px solid #111;
+  /* border-right: 2px solid #111; */
 }
 
 section.our-courses ul.nacc li .right-content .last-span {
@@ -1544,7 +1544,7 @@ section.our-team ul.nacc li .left-content span a {
   margin-right: 30px;
   padding-right: 30px;
   color: #111;
-  border-right: 2px solid #111;
+  /* border-right: 2px solid #111; */
   transition: all .3s;
 }
 
