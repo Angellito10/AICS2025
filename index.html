@@ -21,6 +21,44 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
+    <style>
+      .schedule {
+        background-color: #f8f9fa; /* Light background for contrast */
+        padding: 40px 20px; /* Padding around the section */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        margin-bottom: 40px; /* Space below the section */
+      }
+
+      .schedule-title {
+        font-size: 2rem; /* Larger font size for the title */
+        color: #dc8cdb; /* Color to match the theme */
+        margin-bottom: 20px; /* Space below the title */
+      }
+
+      .schedule-table {
+        border-collapse: collapse; /* Collapse borders for a cleaner look */
+      }
+
+      .schedule-table th, .schedule-table td {
+        padding: 15px; /* Padding inside table cells */
+        text-align: left; /* Align text to the left */
+      }
+
+      .schedule-table th {
+        background-color: #dc8cdb; /* Header background color */
+        color: white; /* Header text color */
+      }
+
+      .schedule-table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Zebra striping for rows */
+      }
+
+      .schedule-table tr:hover {
+        background-color: #e9ecef; /* Highlight row on hover */
+      }
+    </style>
+
   </head>
 
 <body>
@@ -45,7 +83,8 @@
                           <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                           <li class="scroll-to-section"><a href="#services">About Event</a></li>
                           <li class="scroll-to-section"><a href="#section_3">Speakers</a></li>
-                          <li class="scroll-to-section"><a href="#courses">Schedule</a></li>
+                          <li class="scroll-to-section"><a href="#courses">OUR TOPICS</a></li>
+                          <li class="scroll-to-section"><a href="#schedule">Schedule</a></li>
                           <li class="scroll-to-section"><a href="#contact-section">Venue</a></li>
                       </ul>        
                       <a class='menu-trigger'>
@@ -98,6 +137,7 @@
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
+  <!-- About Event Section -->
   <section class="services" id="services">
     <div class="container">
       <div class="row">
@@ -113,13 +153,13 @@
               <div class="service-content">
                 <p class="mb-4 event-description">
                   This event is designed to provoke thought and ignite debate among the bright minds in attendance. The symposium will explore
-                    the multifaceted relationship between artificial intelligence (AI) and cybersecurity, as well as the fields themselves. 
-                    Organised by Master's students specialising in AI and Cybersecurity, this event aims to showcase the latest 
-                    advances and the crucial interplay between these two dynamic fields.
+                  the multifaceted relationship between artificial intelligence (AI) and cybersecurity, as well as the fields themselves. 
+                  Organised by Master's students specialising in AI and Cybersecurity, this event aims to showcase the latest 
+                  advances and the crucial interplay between these two dynamic fields.
                 </p>
                 <div class="service-buttons">
                   <a href="#section_3" class="main-gradient-button me-3">Meet Speakers</a>
-                  <a href="#courses" class="main-gradient-button">Check out Schedule</a>
+                  <a href="#schedule" class="main-gradient-button">Check out Schedule</a>
                 </div>
               </div>
             </div>
@@ -145,6 +185,7 @@
     </div>
   </section>
 
+  <!-- OUR SPEAKERS Section -->
   <section class="speakers" id="section_3">
     <div class="container">
       <div class="row">
@@ -209,7 +250,7 @@
                   <img src="assets/images/speakers/jasson.jpg" alt="New Speaker 1">
                 </div>
                 <div class="speaker-info">
-                  <h5>jeeson</h5>
+                  <h5>Jeeson</h5>
                   <span>AI Expert</span>
                 </div>
               </div>
@@ -228,11 +269,11 @@
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </section>
 
+  <!-- OUR TOPICS Section -->
   <section class="our-courses" id="courses">
     <div class="container">
       <div class="row">
@@ -243,7 +284,7 @@
             <p>Join us at AICS2025!</p>
           </div>
         </div>
-          <div class="col-lg-12">
+        <div class="col-lg-12">
           <div class="naccs">
             <div class="tabs">
               <div class="row">
@@ -286,10 +327,7 @@
                               <i class="fa fa-file-pdf-o"></i>
                               <span>Download Slides</span>
                             </a>
-                            <a href="additional_material/file.zip" target="_blank" rel="noreferrer noopener" download="" class="material-btn">
-                              <i class="fa fa-file-zip-o"></i>
-                              <span>Download Code</span>
-                            </a>
+                          
                           </div>
                           <div>
                             <span>This project implements the "ARP Spoofing Detection and Prevention Tool for Combating Advanced Persistent Threats." It aims to enhance network security by preventing attacks such as Man-in-the-Middle (MitM), SSL stripping, Denial of Service (DoS), session hijacking, and ARP storm attacks.
@@ -356,10 +394,10 @@
                             </div>
                           </div>
                           <div class="course-materials">
-                            <a href="additional_material/file.pdf" target="_blank" rel="noreferrer noopener" class="material-btn">
+                            <!-- <a href="additional_material/file.pdf" target="_blank" rel="noreferrer noopener" class="material-btn">
                               <i class="fa fa-file-pdf-o"></i>
                               <span>Download Slides</span>
-                            </a>
+                            </a> -->
                             <a href="https://github.com/VeronikaSemmelrock/GroundingBottleneck" target="https://github.com/VeronikaSemmelrock/GroundingBottleneck" rel="noreferrer noopener" download="" class="material-btn">
                               <i class="fa fa-file-zip-o"></i>
                               <span>Download Code</span>
@@ -495,22 +533,68 @@
     </div>
   </section>
 
-  <section class="simple-cta">
+  <!-- Schedule Section -->
+  <section class="schedule" id="schedule">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 offset-lg-1">
-          <div class="left-image">
-            <img src="assets/images/AI_CS.jpg" alt="AI and Cybersecurity Event">
+        <div class="col-lg-12">
+          <div class="section-heading text-center">
+            <h6>Event Schedule</h6>
+            <h4 class="schedule-title">Presentations and Timings</h4>
           </div>
         </div>
-        <div class="col-lg-5 align-self-center">
-          <h4>Join the Future of <em>Technology</em></h4>
-          <p>Don't miss this unique opportunity to explore the intersection of AI and Cybersecurity. Network with experts, gain insights, and be part of shaping the future of technology.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover table-custom schedule-table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Time</th>
+                  <th>Presentation</th>
+                  <th>Presenter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>15:30 - 15:45</td>
+                  <td>Detection and Prevention of ARP Cache Poisoning in APT Using Multiphase Validation and Firewall</td>
+                  <td>Muaadh Nasr</td>
+                </tr>
+                <tr>
+                  <td>15:45 - 16:00</td>
+                  <td>Classification of Naira Notes</td>
+                  <td>Akinola, Lanre Olusegun</td>
+                </tr>
+                <tr>
+                  <td>16:00 - 16:15</td>
+                  <td>Investigating the Grounding Bottleneck</td>
+                  <td>Veronika Semmelrock</td>
+                </tr>
+                <tr>
+                  <td>16:15 - 16:30</td>
+                  <td>Known Item Search</td>
+                  <td>Rathee, Aakash</td>
+                </tr>
+                <tr>
+                  <td>16:30 - 16:45</td>
+                  <td>How to Predict Hairstyles Using AR and Yolov8l</td>
+                  <td>Jeeson Kurian</td>
+                </tr>
+                <tr>
+                  <td>16:45 - 17:00</td>
+                  <td>Multi-agent Reinforcement Learning-Based Formation Control for Multi-UAV Systems</td>
+                  <td>Chijioke Chukwuemeka Emem</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Us Section -->
   <section class="contact-us" id="contact-section">
     <div class="container">
       <div class="row">
@@ -554,7 +638,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="footer-brand">
-                  <h3>Artificial Intelligence vs<br>Cybersecurity?</h3>
+                  <h3>Exploring AI & Cybersecurity</h3>
                   <p>Join us for this exciting event at the University of Klagenfurt</p>
                 </div>
               </div>
